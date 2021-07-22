@@ -22,6 +22,5 @@ kernel8.img: $(BUILD_DIR)/start.o $(OFILES)
 clean:
 		del .\build\kernel8* .\build\*.o
 run:
-		qemu-system-aarch64 -M raspi3 -kernel kernel8.img -serial stdio
-		
+		qemu-system-aarch64 -M raspi3 -kernel kernel8.img -serial null -serial stdio
 		
